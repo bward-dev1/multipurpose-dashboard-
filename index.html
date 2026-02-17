@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Hub | All-in-One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Nexus</h2>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1 id="greeting">Welcome back!</h1>
+                <p>Here is what's happening today.</p>
+            </header>
+
+            <section class="stats-grid">
+                <div class="card"><h3>Revenue</h3><p>$12,450</p></div>
+                <div class="card"><h3>Users</h3><p>1,205</p></div>
+                <div class="card"><h3>Uptime</h3><p>99.9%</p></div>
+            </section>
+
+            <section class="todo-app">
+                <h2>Quick Tasks</h2>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Add a new task...">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
